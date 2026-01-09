@@ -1,37 +1,3 @@
-x402-spring-boot-starter/
-├── pom.xml
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   └── com.x402.starter
-│   │   │       ├── X402AutoConfiguration.java       // Entry point
-│   │   │       ├── annotation
-│   │   │       │   └── X402Gated.java               // Marker Annotation
-│   │   │       ├── config
-│   │   │       │   └── X402Properties.java          // Configuration binding
-│   │   │       ├── exception
-│   │   │       │   └── PaymentRequiredException.java
-│   │   │       ├── interceptor
-│   │   │       │   └── PaymentInterceptor.java      // The Gatekeeper
-│   │   │       ├── model
-│   │   │       │   ├── PaymentContext.java          // DTO for merged config
-│   │   │       │   └── FacilitatorResponse.java     // External API response
-│   │   │       └── service
-│   │           │   └── FacilitatorService.java      // WebClient Wrapper
-│   │   └── resources
-│   │       └── META-INF
-│   │           └── spring
-│   │               └── org.springframework.boot.autoconfigure.AutoConfiguration.imports
-│   └── test
-│       ├── java
-│       │   └── com.x402.starter
-│       │       ├── interceptor
-│       │       │   └── PaymentInterceptorTest.java  // Unit Tests
-│       │       └── integration
-│       │           └── X402IntegrationTest.java     // Integration Tests (WireMock)
-│       └── resources
-│           └── application-test.yml
-
 
 # X402 Spring Boot Starter 🪙
 
